@@ -1,0 +1,34 @@
+1 - La fonction spl_autoload_register() sert a executer les fonctions chargé automatiquement
+    lorsqu'il y'a plusieur autoload.
+
+2 - L'avantage de l'héritage évite la redondance de code entre plusieurs class liés. On écrira
+    des methods public et protected dans le parent pour qu'on puisse les utiliser à travers l'enfant.
+    L'enfant profitera aussi des propriétés du parent.
+
+3 -
+
+class Enfant extends Personne{
+
+    protected $classs;
+
+    public function __construct(){
+
+    }
+
+class Professeur extends Personne{
+
+    protected $matière;
+
+    public function __construct(){
+
+    }
+
+class Personne{
+
+    protected $nom;
+    protected $prenom;
+    protected $dateNaissance;
+
+    public function __construct(){
+
+    }
